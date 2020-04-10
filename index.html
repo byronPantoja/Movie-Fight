@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>Movie Fight</title>
 </head>
 
 <body>
@@ -22,9 +23,22 @@
         </div>
     </section>
     <div class="container">
-        <input type="text" />
+        <div class="dropdown is-active">
+            <input />
+            <div class="dropdown-menu">
+                <div class="dropdown-content">
+                    <a class="dropdown-item">Movie #1</a>
+                    <a class="dropdown-item">Movie #2</a>
+                    <a class="dropdown-item">Movie #3</a>
+                </div>
+            </div>
+        </div>
+        <div id="target"></div>
     </div>
+
+    <script src="utils.js"></script>
     <script src="index.js"></script>
+
 </body>
 
 </html>

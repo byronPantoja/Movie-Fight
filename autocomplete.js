@@ -3,7 +3,7 @@ const createAutoComplete = ({
     renderOption,
     onOptionSelect,
     inputValue,
-    fetchData
+    fetchData,
 }) => {
     root.innerHTML = `
       <label><b>Search</b></label>
@@ -48,7 +48,6 @@ const createAutoComplete = ({
     document.addEventListener('click', event => {
         if (!root.contains(event.target)) {
             dropdown.classList.remove('is-active');
-        };
+        }
     });
-
 };

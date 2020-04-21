@@ -10,6 +10,7 @@
 
 <body>
     <div id="mocha"></div>
+    <div id="target"></div>
 
     <script src="https://unpkg.com/chai/chai.js"></script>
     <script src="https://unpkg.com/mocha/mocha.js"></script>
@@ -18,6 +19,8 @@
         mocha.setup('bdd');
         mocha.checkLeaks();
     </script>
+    <script src="../utils.js"></script>
+    <script src="../autocomplete.js"></script>
     <script src="autocomplete.test.js"></script>
     <script class="mocha-exec">
         mocha.run();
